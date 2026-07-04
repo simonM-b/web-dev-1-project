@@ -1,4 +1,52 @@
 body {
   background-color: black;
   color: white;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: darkslateblue;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+section {
+  padding-left: 20px;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+}
+
+#title {
+  background-color: darkslateblue;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+
+}
+
+#title h1 {
+  margin: 0;
+}
+
+.inner-side-by-side {
+  display: flex;
+  gap: 10px;
+}
+
+.left {
+  display: grid;
+  gap: 5px;
+}
+
+.contact-form {
+  background-color: mediumpurple;
+  padding-bottom: 10px;
 }

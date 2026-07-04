@@ -11,68 +11,91 @@
 </head>
 
 <body>
-  <header>
-    <h1>Greenways Community Garden</h1> 
+  <header id="title">
+    <h1>Greenways Community Garden</h1>
   </header>
   <main>
-      <section>
-        <article>
+    <section>
+      <article>
         <header>
           <h2>About</h2>
         </header>
-          <p>
-            Greenways Community Garden began in 2019, when a small group of residents noticed
-            that the empty lot on Maple Street was attracting trash and unwanted activity. Instead of
-            complaining, they approached the city council with a proposal: turn the lot into a s
-            hared
-            garden space.
-          </p> 
-        </article>
+        <p>
+          Greenways Community Garden began in 2019, when a small group of residents noticed
+          that the empty lot on Maple Street was attracting trash and unwanted activity. Instead of
+          complaining, they approached the city council with a proposal: turn the lot into a s
+          hared
+          garden space.
+        </p>
+      </article>
 
-        <article>
-          <header>
-            <h2>Things That we Offer</h2>
-          </header>
-          <p>
-            <ul>
-              <li>garden plots</li>
-              <li>workshops</li>
-              <li>volunteer opportunities</li>
-            </ul>
-          </p>
-        </article>
-      </section>
-
-      <section>
+      <article>
         <header>
-          <h2>Information</h2>
+          <h2>Things That we Offer</h2>
         </header>
-        <h3>Location</h3>
-        <p>123, Maple Street, springfield, CT</p>
-        <h3>Hours</h3>
-        <p>hour1-hour2</p>
-        <h3>Contact us</h3>
-        <p>contact info put here in future</p>
-      </section>
-
-      <section>
-        <h2>Things that we offer</h2>  
+        <p>
         <ul>
-          <li><a href="garden_plot.html"> Apply for a garden plot </li>
-          <li><a href="workshop.html"> Attend a workshops</a></li>
-          <li><a href="volunteer.html"> Volunteer at community events</a></li>
-          <li><a href="voices_from_garden.html"> Voices from the garden</a></li>
-          <li><a href="future_and_sustainability.html"> Future and Sustainabilitp</a></li>
+          <li>garden plots</li>
+          <li>workshops</li>
+          <li>volunteer opportunities</li>
         </ul>
-      </section>
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <header>
+        <h2>Information</h2>
+      </header>
+      <h3>Location</h3>
+      <p>123, Maple Street, springfield, CT</p>
+      <h3>Hours</h3>
+      <p>hour1-hour2</p>
+      <h3>Contact us</h3>
+      <p>contact info put here in future</p>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="garden_plot.html"> Apply for a garden plot </li>
+        <li><a href="workshop.html"> Attend a workshops</a></li>
+        <li><a href="volunteer.html"> Volunteer at community events</a></li>
+        <li><a href="voices_from_garden.html"> Voices from the garden</a></li>
+        <li><a href="future_and_sustainability.html"> Future and Sustainabilitp</a></li>
+      </ul>
+    </section>
+    <section class="contact-form">
+      <h2>Contact us</h2>
+      <form action="/action_page.php" id="contact">
+        <span class="inner-side-by-side">
+          <span class="left">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email.."><br>
+          </span>
+
+          <span class="right">
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea><br>
+          </span>
+        </span>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
   </main>
   <footer>
-      <h2>Footer ↓</h2>
-      <h3>Contact info</h3>
-      <h3>Location</h3>
-      <h3>Hours</h3>
-      <h3>Get a plot</h3>
-  </footer> 
+    <h2>Contact info</h2>
+    <h2>Location</h2>
+    <h2>Hours</h2>
+    <h2>Get a plot</h2>
+  </footer>
 </body>
 
 </html>
