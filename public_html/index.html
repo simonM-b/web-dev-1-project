@@ -15,8 +15,8 @@
     <h1>Greenways Community Garden</h1>
   </header>
   <main>
-    <section>
-      <article>
+    <section id="intro">
+      <article id="about">
         <header>
           <h2>About</h2>
         </header>
@@ -29,7 +29,7 @@
         </p>
       </article>
 
-      <article>
+      <article id="things-offer">
         <header>
           <h2>Things That we Offer</h2>
         </header>
@@ -43,7 +43,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="padded-section">
       <header>
         <h2>Information</h2>
       </header>
@@ -55,7 +55,7 @@
       <p>contact info put here in future</p>
     </section>
 
-    <section>
+    <section class="padded-section">
       <h2>Links</h2>
       <ul>
         <li><a href="garden_plot.html"> Apply for a garden plot </li>
@@ -65,29 +65,33 @@
         <li><a href="future_and_sustainability.html"> Future and Sustainabilitp</a></li>
       </ul>
     </section>
-    <section class="contact-form">
-      <h2>Contact us</h2>
-      <form action="/action_page.php" id="contact">
-        <span class="inner-side-by-side">
-          <span class="left">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+    <section id="contact-form">
+      <article>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email.."><br>
+        <h2>Contact us</h2>
+        <form action="/action_page.php" id="contact">
+          <span class="inner-side-by-side">
+            <span class="left">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your email.."><br>
+            </span>
+
+            <span class="right">
+              <label for="subject">Subject</label><br>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea><br>
+            </span>
           </span>
 
-          <span class="right">
-            <label for="subject">Subject</label><br>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea><br>
-          </span>
-        </span>
-
-        <input type="submit" value="Submit">
-      </form>
+          <input type="submit" value="Submit">
+        </form>
+      </article>
     </section>
   </main>
   <footer>
