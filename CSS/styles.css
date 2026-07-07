@@ -1,9 +1,17 @@
+:root {
+  --main-h2-size: 50pt;
+  --main-h3-size: 40pt;
+}
+
 body {
   background-color: black;
   color: white;
   padding: 0;
   margin: 0;
   background-color: mediumpurple;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -24,6 +32,16 @@ main {
   background-color: mediumpurple;
 }
 
+nav {
+  text-align: center;
+  background-color: darkblue;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+}
+
 header {
   padding: 0;
   margin: 0;
@@ -41,13 +59,44 @@ header {
 
 #title h1 {
   margin: 0;
+  font-size: 100pt;
 }
 
+#things-offer {
+  padding: 10px;
+  background-color: purple;
+}
 
-#intro {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: deepskyblue;
+#things-offer h2 {
+  font-size: var(--main-h2-size);
+}
+
+#things-offer ul li {
+  margin-bottom: 10px;
+}
+
+#about {
+  background-color: plum;
+  padding: 10px;
+}
+
+#about h2 {
+  font-size: var(--main-h2-size);
+
+}
+
+#about p {
+  font-size: 20pt;
+}
+
+#info {
+  padding: 10px;
+  background-color: darkslateblue;
+}
+
+#info h2 {
+
+  font-size: var(--main-h2-size);
 }
 
 
@@ -69,4 +118,50 @@ header {
 
 .padded-section {
   padding-left: 10px;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+
+.links-container div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#things-offer .container {
+  display: flex;
+}
+
+
+#things-offer div .child {
+  position: relative;
+  width: 33.33333%;
+  background-color: burlywood;
+  border: 1px black solid;
+  text-align: center;
+  aspect-ratio: 1/1;
+}
+
+#things-offer h3 {
+  font-size: var(--main-h3-size);
+}
+
+#things-offer div .child img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
