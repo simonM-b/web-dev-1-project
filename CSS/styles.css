@@ -217,3 +217,33 @@ header {
 #schedule {
   display: inline-block;
 }
+
+
+
+
+#volunteer-images-and-sections {
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 5px;
+  background-color: var(--color-d);
+}
+
+
+#volunteer-images-and-sections .child {
+  background-color: burlywood;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#things-you-can-do {
+  display: inline-block;
+  background-color: var(--color-d);
+}
+
+
+#things-you-can-do h2 {
+  font-size: var(--main-h2-size);
+}
