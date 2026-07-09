@@ -1,11 +1,21 @@
 :root {
   --main-h2-size: 50pt;
   --main-h3-size: 40pt;
+  --bigger-p-size: 20pt;
+  --color-a: #744577;
+  --color-b: #F0E9B6;
+  --color-c: #ACCFA3;
+  --color-d: #84C5B1;
+  --coror-extra: burlywood;
+  --color-white: white;
+  --color-black: black;
 }
 
+
+
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
   padding: 0;
   margin: 0;
   background-color: mediumpurple;
@@ -18,8 +28,8 @@ body {
 footer {
   text-align: center;
   padding: 3px;
-  background-color: darkslateblue;
-  color: white;
+  background-color: var(--color-a);
+  color: var(--color-white);
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -29,17 +39,31 @@ main section article {
 }
 
 main {
-  background-color: mediumpurple;
+  background-color: var(--color-d);
 }
 
 nav {
   text-align: center;
-  background-color: darkblue;
+  background-color: var(--color-c);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
 }
 
 nav a {
-  color: white;
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: var(--coror-extra);
 }
 
 header {
@@ -48,7 +72,7 @@ header {
 }
 
 #title {
-  background-color: darkslateblue;
+  background-color: var(--color-a);
   margin: 0;
   text-align: center;
   padding: 10px;
@@ -64,7 +88,7 @@ header {
 
 #things-offer {
   padding: 10px;
-  background-color: purple;
+  background-color: var(--color-b);
 }
 
 #things-offer h2 {
@@ -76,7 +100,7 @@ header {
 }
 
 #about {
-  background-color: plum;
+  background-color: var(--color-d);
   padding: 10px;
 }
 
@@ -86,12 +110,12 @@ header {
 }
 
 #about p {
-  font-size: 20pt;
+  font-size: var(--bigger-p-size);
 }
 
 #info {
   padding: 10px;
-  background-color: darkslateblue;
+  background-color: var(--color-d);
 }
 
 #info h2 {
@@ -111,9 +135,13 @@ header {
 }
 
 #contact-form {
-  background-color: plum;
+  background-color: var(--color-b);
   padding-bottom: 20px;
   padding-top: 10px;
+}
+
+#contact-form h2 {
+  font-size: var(--main-h2-size);
 }
 
 .padded-section {
@@ -143,7 +171,7 @@ header {
 #things-offer div .child {
   position: relative;
   width: 33.33333%;
-  background-color: burlywood;
+  background-color: var(--coror-extra);
   border: 1px black solid;
   text-align: center;
   aspect-ratio: 1/1;
@@ -164,4 +192,28 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#info-gardenplot {
+  display: inline-block;
+}
+
+#info-gardenplot h2 {
+  font-size: var(--main-h2-size);
+}
+
+
+#info-gardenplot li {
+  margin-bottom: 20px;
+  font-size: var(--bigger-p-size);
+}
+
+
+.bigger-p {
+  font-size: var(--bigger-p-size);
+
+}
+
+#schedule {
+  display: inline-block;
 }
