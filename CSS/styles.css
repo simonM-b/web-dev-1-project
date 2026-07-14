@@ -177,6 +177,12 @@ header {
   aspect-ratio: 1/1;
 }
 
+#things-offer div .child img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 #things-offer h3 {
   font-size: var(--main-h3-size);
 }
@@ -237,6 +243,12 @@ header {
   font-size: 30px;
   text-align: center;
 }
+
+#volunteer-images-and-sections .child img {
+  object-fit: cover;
+  width: 100%;
+}
+
 
 #things-you-can-do {
   display: inline-block;
