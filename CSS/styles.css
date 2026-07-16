@@ -259,3 +259,10 @@ header {
 #things-you-can-do h2 {
   font-size: var(--main-h2-size);
 }
+
+
+#quick-note {
+  background-color: var(--color-d);
+  display: inline-block;
+  width: 100%;
+}
