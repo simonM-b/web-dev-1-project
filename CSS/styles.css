@@ -124,25 +124,6 @@ header {
 }
 
 
-.inner-side-by-side {
-  display: flex;
-  gap: 10px;
-}
-
-.left {
-  display: grid;
-  gap: 5px;
-}
-
-#contact-form {
-  background-color: var(--color-b);
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-#contact-form h2 {
-  font-size: var(--main-h2-size);
-}
 
 .padded-section {
   padding-left: 10px;
